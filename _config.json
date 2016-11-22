@@ -1,0 +1,11 @@
+{
+  "mongo":{
+    "url":"localhost",
+    "port":"8080",
+    "user":"user",
+    "pass":"password",
+    "db":"database"
+  },
+  "port":"3000",
+  "debugPrefix":"myAPI"
+}
