@@ -3,11 +3,11 @@
 /**
  * Module dependencies.
  */
-
+var config = require('./../config.json');
 var app = require('../app');
 var debug = require('debug')(config.debugPrefix+':server');
 var http = require('http');
-var config = require('./../config.json');
+
 
 /**
  * Get port from environment and store in Express.
