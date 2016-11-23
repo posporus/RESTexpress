@@ -1,21 +1,22 @@
 #RESTexpress
-RESTful API Server Sceleton build with expressjs a configurable Database connection with mongoose.
+RESTful API Server sceleton build with expressjs and a configurable Database connection with mongoose.
 `npm` and `nodejs` are required.
 
-I'm quite new to this kind of stuff and this was just thought for me to start projects faster. But feel free to use it as well, but use it with care.
+I'm quite new to this kind of stuff and this this sceleton is just for me to start projects faster, actually. Nevertheless feel free to use it as well, but use it with care.
 
 These things are prebuild:
 
 1. User Model (`./models/user.js`).
 2. User Routing (`./routing/users.js`) with
-  * get all users
-  * get specific user
-  * put
-  * delete
-  * post
-  
+  * get
+    * all users `/users`
+    * specific user `/users/[user_id]`
+  * post `/users`
+  * put `/users/[user_id]`
+  * delete `/users/[user_id]`
+
   request methods.
-  
+
 Anything is easily adoptable and changeble.
 
 Don't forget to change `app.js` as well:
@@ -60,7 +61,7 @@ Rename `_config.json` to `config.json` and do your configurations:
 ```
 $ npm start
 ```
-or using nodemon:
+or use [nodemon](https://github.com/remy/nodemon/):
 ```
 $ nodemon start
 ```
